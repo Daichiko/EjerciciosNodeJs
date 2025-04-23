@@ -1,4 +1,4 @@
-import { createPhoneNumber } from "./phoneNumber.js"; // Asegúrate de incluir la extensión .js
+const { createPhoneNumber } = require("./phoneNumber.js"); // Asegúrate de incluir la extensión .js
 
 // Example usage:
 const phoneNumberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];

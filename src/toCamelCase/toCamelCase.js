@@ -1,4 +1,4 @@
-export function toCamelCase(str) {
+function toCamelCase(str) {
   if (!str) {
     return "";
   }
@@ -18,6 +18,8 @@ export function toCamelCase(str) {
 
   return result;
 }
+
+module.exports.toCamelCase = toCamelCase;
 
 // console.log(toCamelCase("the-stealth-warrior")); // Output: theStealthWarrior
 // console.log(toCamelCase("The_Stealth_Warrior")); // Output: TheStealthWarrior

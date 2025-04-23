@@ -1,4 +1,4 @@
-import { toCamelCase } from "./toCamelCase.js"; // Asegúrate de incluir la extensión .js
+const { toCamelCase } = require("./toCamelCase.js"); // Asegúrate de incluir la extensión .js
 
 const testString1 = "hello-world";
 const camelCaseString1 = toCamelCase(testString1);

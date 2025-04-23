@@ -1,4 +1,4 @@
-export function createPhoneNumber(numbers) {
+function createPhoneNumber(numbers) {
   if (numbers.length !== 10 || numbers.some((num) => num < 0 || num > 9)) {
     return "Invalid input: Array must contain 10 integers between 0 and 9.";
   }
@@ -9,6 +9,8 @@ export function createPhoneNumber(numbers) {
 
   return `(${part1}) ${part2}-${part3}`;
 }
+
+module.exports.createPhoneNumber = createPhoneNumber;
 
 //   // Example usage:
 //   const phoneNumberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
